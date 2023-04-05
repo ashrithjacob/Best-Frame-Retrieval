@@ -1,11 +1,9 @@
 import torch
 import torchvision
-import torch.nn as nn
-import torch.optim as optim
+from torch import nn, optim
+from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
-import deeplake
-import numpy as np
-import matplotlib.pyplot as plt
+from processing import grey_to_rgb, imshow, imexpl
 
 # Define the autoencoder architecture
 class Autoencoder(nn.Module):
@@ -80,24 +78,40 @@ class Autoencoder(nn.Module):
         x = self.decoder(x)
         return x
 
-def imshow(img):
-        img = img / 2 + 0.5  # unnormalize
-        npimg = img.numpy()
-        plt.imshow(np.transpose(npimg, (1, 2, 0)))
-        plt.show()
-
-
 
 if __name__ == "__main__":
-    ds = deeplake.load("hub://activeloop/caltech256")
-    dataloader = ds.pytorch(num_workers=0, batch_size=4, shuffle=False)
+    transform = transforms.Compose(
+        [   transforms.ToTensor(),
+            transforms.Normalize((0.5,), (0.5,)),
+            transforms.Resize((96, 192), antialias=True),
+            transforms.Lambda(grey_to_rgb),
+        ]
+    )
+    trainset = datasets.Caltech256(
+        "./DATA",
+        download=True,
+        transform=transform,
+    )
+    """
+    valset = datasets.Caltech256(
+        "./DATA",
+        download=True,
+        train=False,
+        transform=transform,
+    )
+    """
+    trainloader = torch.utils.data.DataLoader(trainset, batch_size=64, shuffle=True)
+    #valloader = torch.utils.data.DataLoader(valset, batch_size=64, shuffle=True)
 
     # get some random training images
-    dataiter = iter(dataloader)
-    images, labels = next(dataiter)
+    dataiter = iter(trainloader)
+    images, _ = next(dataiter)
 
     # show images
     imshow(torchvision.utils.make_grid(images))
+
+    # explore the dataset
+    imexpl(images)
     """
     # Create an instance of the autoencoder model
     model = Autoencoder()
