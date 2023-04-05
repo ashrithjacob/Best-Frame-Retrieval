@@ -7,7 +7,8 @@ The architecture is as follows:
 ![Architecture](https://github.com/ashrithjacob/Best-Frame-Retrieval/blob/main/images/architecture.png?raw=true)
 
 ## TODO:
-1. Load Caltech-256
-2. Define loss function (MS-SSIM + L1)
-3. Train autoencoder
-4. Build repo for custom dataset (see pytorch lightning Datamodule) 
+1. Load Caltech-256 - DONE
+2. Train-Test split 
+3. Define loss function (MS-SSIM + L1)
+4. Train autoencoder
+5. Build repo for custom dataset (see pytorch lightning Datamodule) 
