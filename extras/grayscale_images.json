@@ -1,0 +1,2112 @@
+[
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/212.teapot/212_0008.jpg",
+        "width": 345,
+        "height": 339
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/201.starfish-101/201_0047.jpg",
+        "width": 300,
+        "height": 298
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/201.starfish-101/201_0071.jpg",
+        "width": 300,
+        "height": 290
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/201.starfish-101/201_0044.jpg",
+        "width": 300,
+        "height": 248
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/201.starfish-101/201_0027.jpg",
+        "width": 207,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/111.house-fly/111_0040.jpg",
+        "width": 400,
+        "height": 373
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/111.house-fly/111_0018.jpg",
+        "width": 510,
+        "height": 526
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/111.house-fly/111_0065.jpg",
+        "width": 250,
+        "height": 216
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/111.house-fly/111_0009.jpg",
+        "width": 200,
+        "height": 188
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/111.house-fly/111_0031.jpg",
+        "width": 562,
+        "height": 458
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/111.house-fly/111_0024.jpg",
+        "width": 481,
+        "height": 600
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/111.house-fly/111_0084.jpg",
+        "width": 414,
+        "height": 318
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/111.house-fly/111_0019.jpg",
+        "width": 346,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/214.teepee/214_0129.jpg",
+        "width": 180,
+        "height": 268
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/214.teepee/214_0006.jpg",
+        "width": 600,
+        "height": 749
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/214.teepee/214_0067.jpg",
+        "width": 180,
+        "height": 248
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/214.teepee/214_0019.jpg",
+        "width": 222,
+        "height": 330
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/214.teepee/214_0039.jpg",
+        "width": 150,
+        "height": 223
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/214.teepee/214_0074.jpg",
+        "width": 600,
+        "height": 614
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/214.teepee/214_0043.jpg",
+        "width": 265,
+        "height": 265
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/232.t-shirt/232_0220.jpg",
+        "width": 416,
+        "height": 622
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/232.t-shirt/232_0308.jpg",
+        "width": 368,
+        "height": 321
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/232.t-shirt/232_0245.jpg",
+        "width": 200,
+        "height": 208
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/084.giraffe/084_0063.jpg",
+        "width": 468,
+        "height": 315
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/058.doorknob/058_0046.jpg",
+        "width": 600,
+        "height": 450
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/058.doorknob/058_0011.jpg",
+        "width": 550,
+        "height": 388
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/058.doorknob/058_0084.jpg",
+        "width": 306,
+        "height": 228
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/058.doorknob/058_0053.jpg",
+        "width": 435,
+        "height": 600
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/173.rifle/173_0097.jpg",
+        "width": 529,
+        "height": 375
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/171.refrigerator/171_0003.jpg",
+        "width": 792,
+        "height": 612
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/126.ladder/126_0102.jpg",
+        "width": 200,
+        "height": 301
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/126.ladder/126_0238.jpg",
+        "width": 452,
+        "height": 600
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/126.ladder/126_0100.jpg",
+        "width": 500,
+        "height": 751
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/126.ladder/126_0085.jpg",
+        "width": 301,
+        "height": 281
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/021.breadmaker/021_0103.jpg",
+        "width": 219,
+        "height": 219
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/055.dice/055_0091.jpg",
+        "width": 800,
+        "height": 600
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/063.electric-guitar-101/063_0080.jpg",
+        "width": 300,
+        "height": 208
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/063.electric-guitar-101/063_0070.jpg",
+        "width": 300,
+        "height": 166
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/139.megaphone/139_0036.jpg",
+        "width": 425,
+        "height": 425
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/197.speed-boat/197_0037.jpg",
+        "width": 924,
+        "height": 580
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/032.cartman/032_0047.jpg",
+        "width": 410,
+        "height": 436
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/032.cartman/032_0098.jpg",
+        "width": 200,
+        "height": 229
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/032.cartman/032_0055.jpg",
+        "width": 339,
+        "height": 288
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/007.bat/007_0082.jpg",
+        "width": 450,
+        "height": 449
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/165.pram/165_0032.jpg",
+        "width": 500,
+        "height": 496
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/165.pram/165_0006.jpg",
+        "width": 873,
+        "height": 1146
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/165.pram/165_0025.jpg",
+        "width": 330,
+        "height": 223
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/163.playing-card/163_0035.jpg",
+        "width": 320,
+        "height": 243
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/205.superman/205_0084.jpg",
+        "width": 379,
+        "height": 432
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/167.pyramid/167_0029.jpg",
+        "width": 509,
+        "height": 318
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/167.pyramid/167_0003.jpg",
+        "width": 547,
+        "height": 398
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/199.spoon/199_0003.jpg",
+        "width": 144,
+        "height": 157
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/067.eyeglasses/067_0068.jpg",
+        "width": 270,
+        "height": 203
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/137.mars/137_0075.jpg",
+        "width": 300,
+        "height": 245
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/083.gas-pump/083_0014.jpg",
+        "width": 343,
+        "height": 482
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0114.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0056.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0110.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0034.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0027.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0010.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0007.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0022.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0081.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0044.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0103.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0049.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0108.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0023.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0036.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0060.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0051.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0011.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0088.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0026.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0042.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0033.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0035.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0046.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0078.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0084.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0058.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0053.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0087.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0014.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0043.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0075.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0071.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0016.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0116.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0024.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0038.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0067.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0065.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0089.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0092.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0102.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0074.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0105.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0031.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0100.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0077.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0013.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0104.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0021.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0040.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0048.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0113.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0093.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0003.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0107.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0072.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0037.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0070.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0112.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0063.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0039.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0085.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0001.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0017.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0064.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0094.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0028.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0083.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0062.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0057.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0029.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0054.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0030.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0095.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0047.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0066.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0086.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0002.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0099.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0090.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0012.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0050.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0115.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0098.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0080.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0091.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0097.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0069.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0061.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0015.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0096.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0020.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0019.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0041.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0045.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0032.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0079.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0006.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0106.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0101.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0018.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0052.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0055.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0082.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0025.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0111.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0009.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0004.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0109.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0059.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0068.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0005.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0008.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0076.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/252.car-side-101/252_0073.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/233.tuning-fork/233_0063.jpg",
+        "width": 450,
+        "height": 808
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/061.dumb-bell/061_0008.jpg",
+        "width": 250,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0086.jpg",
+        "width": 300,
+        "height": 157
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0043.jpg",
+        "width": 300,
+        "height": 206
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0065.jpg",
+        "width": 300,
+        "height": 184
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0037.jpg",
+        "width": 300,
+        "height": 211
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0042.jpg",
+        "width": 300,
+        "height": 160
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0085.jpg",
+        "width": 300,
+        "height": 173
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0041.jpg",
+        "width": 300,
+        "height": 199
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0059.jpg",
+        "width": 300,
+        "height": 192
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0056.jpg",
+        "width": 300,
+        "height": 166
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0078.jpg",
+        "width": 300,
+        "height": 203
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/172.revolver-101/172_0032.jpg",
+        "width": 300,
+        "height": 231
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/090.gorilla/090_0128.jpg",
+        "width": 334,
+        "height": 400
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/255.tennis-shoes/255_0047.jpg",
+        "width": 220,
+        "height": 220
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/255.tennis-shoes/255_0045.jpg",
+        "width": 220,
+        "height": 220
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/153.palm-pilot/153_0057.jpg",
+        "width": 387,
+        "height": 364
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/153.palm-pilot/153_0080.jpg",
+        "width": 174,
+        "height": 185
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/123.ketch-101/123_0066.jpg",
+        "width": 211,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/123.ketch-101/123_0105.jpg",
+        "width": 204,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/123.ketch-101/123_0079.jpg",
+        "width": 300,
+        "height": 291
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/123.ketch-101/123_0002.jpg",
+        "width": 246,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/210.syringe/210_0010.jpg",
+        "width": 281,
+        "height": 227
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/146.mountain-bike/146_0075.jpg",
+        "width": 360,
+        "height": 243
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/060.duck/060_0049.jpg",
+        "width": 360,
+        "height": 283
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0188.jpg",
+        "width": 170,
+        "height": 170
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0186.jpg",
+        "width": 326,
+        "height": 255
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0206.jpg",
+        "width": 150,
+        "height": 150
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0165.jpg",
+        "width": 372,
+        "height": 272
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0139.jpg",
+        "width": 437,
+        "height": 410
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0084.jpg",
+        "width": 480,
+        "height": 600
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0101.jpg",
+        "width": 204,
+        "height": 278
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0133.jpg",
+        "width": 581,
+        "height": 400
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0147.jpg",
+        "width": 225,
+        "height": 230
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0019.jpg",
+        "width": 384,
+        "height": 240
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0161.jpg",
+        "width": 240,
+        "height": 200
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0120.jpg",
+        "width": 200,
+        "height": 244
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0169.jpg",
+        "width": 660,
+        "height": 450
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0121.jpg",
+        "width": 716,
+        "height": 569
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0117.jpg",
+        "width": 187,
+        "height": 288
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/159.people/159_0003.jpg",
+        "width": 308,
+        "height": 262
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/225.tower-pisa/225_0090.jpg",
+        "width": 256,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/225.tower-pisa/225_0025.jpg",
+        "width": 200,
+        "height": 261
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/225.tower-pisa/225_0020.jpg",
+        "width": 275,
+        "height": 223
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/127.laptop-101/127_0058.jpg",
+        "width": 300,
+        "height": 254
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/127.laptop-101/127_0103.jpg",
+        "width": 300,
+        "height": 282
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/043.coin/043_0023.jpg",
+        "width": 1280,
+        "height": 1024
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/043.coin/043_0042.jpg",
+        "width": 7913,
+        "height": 7913
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/230.trilobite-101/230_0009.jpg",
+        "width": 201,
+        "height": 235
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/230.trilobite-101/230_0002.jpg",
+        "width": 353,
+        "height": 266
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/230.trilobite-101/230_0087.jpg",
+        "width": 184,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/230.trilobite-101/230_0025.jpg",
+        "width": 255,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/230.trilobite-101/230_0090.jpg",
+        "width": 196,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0013.jpg",
+        "width": 640,
+        "height": 480
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0058.jpg",
+        "width": 503,
+        "height": 370
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0041.jpg",
+        "width": 472,
+        "height": 387
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0095.jpg",
+        "width": 450,
+        "height": 290
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0052.jpg",
+        "width": 472,
+        "height": 340
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0096.jpg",
+        "width": 484,
+        "height": 260
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0111.jpg",
+        "width": 499,
+        "height": 504
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0112.jpg",
+        "width": 188,
+        "height": 154
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0057.jpg",
+        "width": 500,
+        "height": 374
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0049.jpg",
+        "width": 403,
+        "height": 351
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0038.jpg",
+        "width": 500,
+        "height": 333
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0098.jpg",
+        "width": 402,
+        "height": 710
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0021.jpg",
+        "width": 440,
+        "height": 339
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0110.jpg",
+        "width": 165,
+        "height": 256
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0087.jpg",
+        "width": 400,
+        "height": 402
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0011.jpg",
+        "width": 640,
+        "height": 480
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0084.jpg",
+        "width": 765,
+        "height": 539
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0036.jpg",
+        "width": 250,
+        "height": 193
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0053.jpg",
+        "width": 711,
+        "height": 527
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/044.comet/044_0006.jpg",
+        "width": 432,
+        "height": 262
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/075.floppy-disk/075_0058.jpg",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/052.crab-101/052_0045.jpg",
+        "width": 300,
+        "height": 189
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/052.crab-101/052_0068.jpg",
+        "width": 300,
+        "height": 254
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/052.crab-101/052_0080.jpg",
+        "width": 300,
+        "height": 262
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/168.raccoon/168_0018.jpg",
+        "width": 250,
+        "height": 201
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/036.chandelier-101/036_0045.jpg",
+        "width": 250,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/036.chandelier-101/036_0039.jpg",
+        "width": 280,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/144.minotaur/144_0082.jpg",
+        "width": 446,
+        "height": 682
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/144.minotaur/144_0016.jpg",
+        "width": 600,
+        "height": 400
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/144.minotaur/144_0070.jpg",
+        "width": 395,
+        "height": 510
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/144.minotaur/144_0036.jpg",
+        "width": 563,
+        "height": 600
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/144.minotaur/144_0073.jpg",
+        "width": 392,
+        "height": 504
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/144.minotaur/144_0023.jpg",
+        "width": 252,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/144.minotaur/144_0054.jpg",
+        "width": 492,
+        "height": 700
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/062.eiffel-tower/062_0047.jpg",
+        "width": 283,
+        "height": 425
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/062.eiffel-tower/062_0077.jpg",
+        "width": 664,
+        "height": 447
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/226.traffic-light/226_0080.jpg",
+        "width": 500,
+        "height": 341
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/226.traffic-light/226_0020.jpg",
+        "width": 570,
+        "height": 640
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/147.mushroom/147_0022.jpg",
+        "width": 500,
+        "height": 334
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/222.tombstone/222_0027.jpg",
+        "width": 176,
+        "height": 200
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/222.tombstone/222_0078.jpg",
+        "width": 218,
+        "height": 272
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/222.tombstone/222_0032.jpg",
+        "width": 500,
+        "height": 582
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/006.basketball-hoop/006_0063.jpg",
+        "width": 800,
+        "height": 600
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/006.basketball-hoop/006_0075.jpg",
+        "width": 231,
+        "height": 330
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/006.basketball-hoop/006_0007.jpg",
+        "width": 240,
+        "height": 247
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/006.basketball-hoop/006_0005.jpg",
+        "width": 240,
+        "height": 229
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/006.basketball-hoop/006_0004.jpg",
+        "width": 500,
+        "height": 498
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/105.horse/105_0211.jpg",
+        "width": 410,
+        "height": 328
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/104.homer-simpson/104_0056.jpg",
+        "width": 350,
+        "height": 350
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/104.homer-simpson/104_0034.jpg",
+        "width": 304,
+        "height": 378
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/219.theodolite/219_0048.jpg",
+        "width": 430,
+        "height": 289
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/219.theodolite/219_0038.jpg",
+        "width": 500,
+        "height": 498
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/089.goose/089_0033.jpg",
+        "width": 320,
+        "height": 401
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/066.ewer-101/066_0078.jpg",
+        "width": 167,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/066.ewer-101/066_0077.jpg",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/069.fighter-jet/069_0095.jpg",
+        "width": 288,
+        "height": 182
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/001.ak47/001_0016.jpg",
+        "width": 436,
+        "height": 180
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/008.bathtub/008_0137.jpg",
+        "width": 169,
+        "height": 240
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0076.jpg",
+        "width": 300,
+        "height": 235
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0012.jpg",
+        "width": 300,
+        "height": 249
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0080.jpg",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0009.jpg",
+        "width": 300,
+        "height": 216
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0013.jpg",
+        "width": 300,
+        "height": 249
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0011.jpg",
+        "width": 300,
+        "height": 249
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0081.jpg",
+        "width": 300,
+        "height": 287
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0054.jpg",
+        "width": 254,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0014.jpg",
+        "width": 300,
+        "height": 249
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0041.jpg",
+        "width": 300,
+        "height": 225
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0040.jpg",
+        "width": 300,
+        "height": 241
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0053.jpg",
+        "width": 300,
+        "height": 255
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/020.brain-101/020_0059.jpg",
+        "width": 300,
+        "height": 257
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/229.tricycle/229_0095.jpg",
+        "width": 276,
+        "height": 337
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/229.tricycle/229_0023.jpg",
+        "width": 3174,
+        "height": 2538
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/229.tricycle/229_0036.jpg",
+        "width": 561,
+        "height": 558
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/134.llama-101/134_0081.jpg",
+        "width": 300,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/034.centipede/034_0084.jpg",
+        "width": 225,
+        "height": 172
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/034.centipede/034_0059.jpg",
+        "width": 300,
+        "height": 231
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/115.ice-cream-cone/115_0046.jpg",
+        "width": 350,
+        "height": 274
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/191.sneaker/191_0053.jpg",
+        "width": 431,
+        "height": 299
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/191.sneaker/191_0076.jpg",
+        "width": 574,
+        "height": 352
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/193.soccer-ball/193_0041.jpg",
+        "width": 200,
+        "height": 211
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/038.chimp/038_0053.jpg",
+        "width": 600,
+        "height": 445
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/138.mattress/138_0072.jpg",
+        "width": 360,
+        "height": 240
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/177.saturn/177_0047.jpg",
+        "width": 240,
+        "height": 240
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/177.saturn/177_0069.jpg",
+        "width": 642,
+        "height": 504
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/177.saturn/177_0051.jpg",
+        "width": 226,
+        "height": 176
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/177.saturn/177_0084.jpg",
+        "width": 355,
+        "height": 260
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/247.xylophone/247_0022.jpg",
+        "width": 553,
+        "height": 368
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/017.bowling-ball/017_0070.jpg",
+        "width": 213,
+        "height": 265
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/101.head-phones/101_0069.jpg",
+        "width": 259,
+        "height": 218
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/094.guitar-pick/094_0001.jpg",
+        "width": 250,
+        "height": 250
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/094.guitar-pick/094_0021.jpg",
+        "width": 250,
+        "height": 142
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/094.guitar-pick/094_0062.jpg",
+        "width": 250,
+        "height": 266
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/094.guitar-pick/094_0051.jpg",
+        "width": 360,
+        "height": 360
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/094.guitar-pick/094_0052.jpg",
+        "width": 220,
+        "height": 247
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/094.guitar-pick/094_0055.jpg",
+        "width": 166,
+        "height": 189
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/030.canoe/030_0097.jpg",
+        "width": 586,
+        "height": 493
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/030.canoe/030_0009.jpg",
+        "width": 388,
+        "height": 576
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/140.menorah-101/140_0019.jpg",
+        "width": 240,
+        "height": 183
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/140.menorah-101/140_0022.jpg",
+        "width": 268,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/140.menorah-101/140_0026.jpg",
+        "width": 216,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/140.menorah-101/140_0060.jpg",
+        "width": 300,
+        "height": 239
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/140.menorah-101/140_0082.jpg",
+        "width": 280,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/140.menorah-101/140_0033.jpg",
+        "width": 300,
+        "height": 230
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/140.menorah-101/140_0051.jpg",
+        "width": 285,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/140.menorah-101/140_0074.jpg",
+        "width": 300,
+        "height": 262
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/148.mussels/148_0034.jpg",
+        "width": 340,
+        "height": 223
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/064.elephant-101/064_0050.jpg",
+        "width": 211,
+        "height": 432
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/064.elephant-101/064_0005.jpg",
+        "width": 502,
+        "height": 500
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/064.elephant-101/064_0131.jpg",
+        "width": 240,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/064.elephant-101/064_0051.jpg",
+        "width": 750,
+        "height": 600
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/064.elephant-101/064_0127.jpg",
+        "width": 300,
+        "height": 234
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/102.helicopter-101/102_0071.jpg",
+        "width": 300,
+        "height": 179
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/102.helicopter-101/102_0088.jpg",
+        "width": 300,
+        "height": 197
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/110.hourglass/110_0030.jpg",
+        "width": 380,
+        "height": 487
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/031.car-tire/031_0042.jpg",
+        "width": 400,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/131.lightbulb/131_0003.jpg",
+        "width": 250,
+        "height": 250
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/131.lightbulb/131_0073.jpg",
+        "width": 144,
+        "height": 202
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/057.dolphin-101/057_0025.jpg",
+        "width": 1125,
+        "height": 843
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/057.dolphin-101/057_0085.jpg",
+        "width": 296,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/155.paperclip/155_0081.jpg",
+        "width": 246,
+        "height": 256
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/155.paperclip/155_0080.jpg",
+        "width": 400,
+        "height": 400
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/155.paperclip/155_0015.jpg",
+        "width": 300,
+        "height": 215
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/155.paperclip/155_0008.jpg",
+        "width": 203,
+        "height": 270
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/155.paperclip/155_0039.jpg",
+        "width": 225,
+        "height": 164
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/155.paperclip/155_0006.jpg",
+        "width": 371,
+        "height": 206
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/155.paperclip/155_0072.jpg",
+        "width": 257,
+        "height": 350
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/155.paperclip/155_0067.jpg",
+        "width": 256,
+        "height": 219
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/174.rotary-phone/174_0033.jpg",
+        "width": 640,
+        "height": 427
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/040.cockroach/040_0119.jpg",
+        "width": 375,
+        "height": 216
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/040.cockroach/040_0049.jpg",
+        "width": 271,
+        "height": 324
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/040.cockroach/040_0050.jpg",
+        "width": 285,
+        "height": 288
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/040.cockroach/040_0123.jpg",
+        "width": 224,
+        "height": 168
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/223.top-hat/223_0015.jpg",
+        "width": 552,
+        "height": 404
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/022.buddha-101/022_0094.jpg",
+        "width": 215,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/022.buddha-101/022_0047.jpg",
+        "width": 242,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/022.buddha-101/022_0009.jpg",
+        "width": 298,
+        "height": 392
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/022.buddha-101/022_0090.jpg",
+        "width": 187,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/022.buddha-101/022_0028.jpg",
+        "width": 300,
+        "height": 280
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/096.hammock/096_0092.jpg",
+        "width": 600,
+        "height": 344
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/244.wheelbarrow/244_0041.jpg",
+        "width": 500,
+        "height": 809
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/244.wheelbarrow/244_0038.jpg",
+        "width": 600,
+        "height": 889
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/244.wheelbarrow/244_0079.jpg",
+        "width": 512,
+        "height": 354
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/244.wheelbarrow/244_0010.jpg",
+        "width": 945,
+        "height": 525
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/195.soda-can/195_0039.jpg",
+        "width": 350,
+        "height": 247
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0001.jpg",
+        "width": 400,
+        "height": 539
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0012.jpg",
+        "width": 200,
+        "height": 138
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0084.jpg",
+        "width": 469,
+        "height": 663
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0039.jpg",
+        "width": 337,
+        "height": 450
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0075.jpg",
+        "width": 200,
+        "height": 282
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0019.jpg",
+        "width": 640,
+        "height": 480
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0017.jpg",
+        "width": 247,
+        "height": 162
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0045.jpg",
+        "width": 344,
+        "height": 268
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0063.jpg",
+        "width": 1223,
+        "height": 829
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0023.jpg",
+        "width": 247,
+        "height": 162
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0065.jpg",
+        "width": 539,
+        "height": 275
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0043.jpg",
+        "width": 339,
+        "height": 168
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0040.jpg",
+        "width": 350,
+        "height": 188
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0032.jpg",
+        "width": 770,
+        "height": 1171
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0066.jpg",
+        "width": 199,
+        "height": 200
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0005.jpg",
+        "width": 432,
+        "height": 222
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0010.jpg",
+        "width": 400,
+        "height": 578
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0082.jpg",
+        "width": 175,
+        "height": 238
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0047.jpg",
+        "width": 301,
+        "height": 421
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0067.jpg",
+        "width": 568,
+        "height": 764
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0011.jpg",
+        "width": 231,
+        "height": 165
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0044.jpg",
+        "width": 183,
+        "height": 211
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/184.sheet-music/184_0048.jpg",
+        "width": 225,
+        "height": 310
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/014.blimp/014_0022.jpg",
+        "width": 595,
+        "height": 477
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/082.galaxy/082_0032.jpg",
+        "width": 800,
+        "height": 662
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/082.galaxy/082_0080.jpg",
+        "width": 510,
+        "height": 340
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/082.galaxy/082_0057.jpg",
+        "width": 640,
+        "height": 420
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/082.galaxy/082_0055.jpg",
+        "width": 1259,
+        "height": 728
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/082.galaxy/082_0040.jpg",
+        "width": 1000,
+        "height": 600
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0576.jpg",
+        "width": 261,
+        "height": 148
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0511.jpg",
+        "width": 261,
+        "height": 156
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0561.jpg",
+        "width": 261,
+        "height": 145
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0659.jpg",
+        "width": 261,
+        "height": 164
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0640.jpg",
+        "width": 261,
+        "height": 210
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0679.jpg",
+        "width": 261,
+        "height": 160
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0771.jpg",
+        "width": 261,
+        "height": 142
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0376.jpg",
+        "width": 261,
+        "height": 166
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0754.jpg",
+        "width": 261,
+        "height": 156
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0570.jpg",
+        "width": 261,
+        "height": 147
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/145.motorbikes-101/145_0512.jpg",
+        "width": 261,
+        "height": 137
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/245.windmill/245_0088.jpg",
+        "width": 400,
+        "height": 510
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/028.camel/028_0020.jpg",
+        "width": 618,
+        "height": 470
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/028.camel/028_0031.jpg",
+        "width": 629,
+        "height": 435
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/013.birdbath/013_0020.jpg",
+        "width": 204,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/234.tweezer/234_0104.jpg",
+        "width": 148,
+        "height": 300
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/234.tweezer/234_0043.jpg",
+        "width": 250,
+        "height": 250
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/234.tweezer/234_0020.jpg",
+        "width": 200,
+        "height": 150
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/234.tweezer/234_0031.jpg",
+        "width": 476,
+        "height": 778
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/234.tweezer/234_0055.jpg",
+        "width": 250,
+        "height": 117
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/234.tweezer/234_0070.jpg",
+        "width": 189,
+        "height": 188
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/234.tweezer/234_0044.jpg",
+        "width": 220,
+        "height": 220
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/234.tweezer/234_0001.jpg",
+        "width": 447,
+        "height": 550
+    },
+    {
+        "file": "./DATA/caltech256/256_ObjectCategories/045.computer-keyboard/045_0053.jpg",
+        "width": 332,
+        "height": 479
+    }
+]
