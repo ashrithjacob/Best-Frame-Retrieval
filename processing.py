@@ -1,13 +1,33 @@
 import torch
 import matplotlib.pyplot as plt
 import numpy as np
-import cv2
-from pytorch_msssim import ssim, ms_ssim, SSIM, MS_SSIM
+import os
+
+get_epoch = lambda x: int(x.split("-")[2].split(".")[0][0:])
+
+
+def get_latest_epoch(path):
+    files = os.listdir(path)
+    epochs = [
+        get_epoch(x)
+        for x in files
+        if (x.endswith(".pth") and x.startswith("MS_SSIM_L1"))
+    ]
+    return max(epochs)
+
+
+def checkpoint(model, filename):
+    torch.save(model.state_dict(), filename)
+
+
+def resume(model, filename):
+    model.load_state_dict(torch.load(filename))
+
 
 def normalise_zero_one(*args):
-    norm_img =[]
+    norm_img = []
     for x in args:
-        x=(x * 0.5) + 0.5
+        x = (x * 0.5) + 0.5
         norm_img.append(x)
     return norm_img
 
@@ -18,21 +38,20 @@ def grey_to_rgb(img):
         img = img.repeat(3, 1, 1)
     return img
 
+
 def imshow(img):
     img = img / 2 + 0.5  # unnormalize
     img_t = np.transpose(img, (1, 2, 0))
-    plt.imshow(img_t, cmap='hot')
+    plt.imshow(img_t, cmap="hot")
     plt.show()
 
+
 def imexpl(img):
-    print(f'image shape: {img.shape}')
-    print(f'image type: {img.dtype}')
-    print(f'image min: {img.min()}')
-    print(f'image max: {img.max()}')
-
-def ms_ssim_loss(img1, img2):
-    img_norm = normalise_zero_one(img1, img2)
-    ms_ssim = MS_SSIM(data_range=1, size_average=True, channel=3)
-    return (1 - ms_ssim(img_norm[0], img_norm[1]))
+    print(f"image shape: {img.shape}")
+    print(f"image type: {img.dtype}")
+    print(f"image min: {img.min()}")
+    print(f"image max: {img.max()}")
 
 
+x=get_latest_epoch("./checkpoints")
+print(x)
