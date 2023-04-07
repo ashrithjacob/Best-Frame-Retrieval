@@ -3,10 +3,11 @@ import torchvision
 from torch import nn, optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
-from processing import grey_to_rgb, ms_ssim_loss
+from processing import grey_to_rgb
 import matplotlib.pyplot as plt
 import numpy as np
 import time
+from MS_SSIM_L1_loss import MS_SSIM_L1_LOSS
 
 # Define the autoencoder architecture
 class Autoencoder(nn.Module):
@@ -114,7 +115,7 @@ if __name__ == "__main__":
     # Setting parameters
     model = Autoencoder()
     model = model.to(device)
-    criterion = nn.MSELoss()
+    criterion = MS_SSIM_L1_LOSS()
     learning_rate = 0.01
     optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
     epoch = 10
@@ -129,9 +130,9 @@ if __name__ == "__main__":
             loss = criterion(img_in, img_out)
             loss.backward()
             optimizer.step()
-            if (i + 1) % 200 == 0:
+            if (i + 1) % 100 == 0:
                 print(
                     f"Epoch [{e+1}/{epoch}], Step [{i+1}/{n_total_steps}], Loss: {loss.item():.4f}"
                 )
     print("Finished Training in time", (time.time() - start_time) / 60, "mins")
-    torch.save(model.state_dict(), "autoencoder.pth") 
+    torch.save(model.state_dict(), "autoencoder_MS_SSIM_L1.pth") 
