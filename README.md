@@ -9,6 +9,5 @@ The architecture is as follows:
 ## TODO:
 1. Load Caltech-256 - DONE
 2. Train-Test split - DONE
-3. Define loss function (MS-SSIM + L1)
-4. Train autoencoder - RUN ON GPU
-5. Build repo for custom dataset (see pytorch lightning Datamodule) 
+3. Define loss function (MS-SSIM + L1) - DONE
+4. Train autoencoder - DONE (20 epochs)
