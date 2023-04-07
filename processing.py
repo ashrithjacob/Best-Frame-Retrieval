@@ -13,7 +13,10 @@ def get_latest_epoch(path):
         for x in files
         if (x.endswith(".pth") and x.startswith("MS_SSIM_L1"))
     ]
-    return max(epochs)
+    if len(epochs) == 0:
+        return 0
+    else:
+        return max(epochs)
 
 
 def checkpoint(model, filename):
@@ -52,6 +55,3 @@ def imexpl(img):
     print(f"image min: {img.min()}")
     print(f"image max: {img.max()}")
 
-
-x=get_latest_epoch("./checkpoints")
-print(x)
