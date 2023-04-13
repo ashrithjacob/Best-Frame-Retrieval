@@ -16,3 +16,5 @@ The architecture is as follows:
     - Use loss params as in paper (alpha =0.84 from 0.025 (`checkpoint 30`) , see G value as well)
     - SGD >>> Adam (`2x better results`)
     - epoch 40-50: `batch_size=16`
+5. See 'num_workers' in dataloader
+
