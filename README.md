@@ -41,3 +41,9 @@ Batch norm thus in a sense tries to decouple the input data to a layer from the 
 ## Feature extraction
 1. Extract features from the encoder part of the autoencoder
 2. https://link.springer.com/chapter/10.1007/978-3-319-51281-5_40
+
+## Getting least blurry frame
+1. https://stackoverflow.com/questions/7765810/is-there-a-way-to-detect-if-an-image-is-blurry
+2. https://pysource.com/2019/09/03/detect-when-an-image-is-blurry-opencv-with-python/
+3. https://pyimagesearch.com/2015/09/07/blur-detection-with-opencv/
+4. See how katna did image blur: https://aloksaan.medium.com/video-key-frame-extraction-with-katna-11971ac45c76
