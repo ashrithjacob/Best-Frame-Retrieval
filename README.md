@@ -37,3 +37,7 @@ During testing, this running mean and std are used to normalise the data (not th
 Intuition:
 We can think of the batch norm layer as a linear transformation of the input data. The linear transformation is parameterized by two learnable parameters, gamma and beta. The linear transformation is applied to the input data in both training and testing. The difference is that in training, the mean and std of the input data are calculated for each batch and used to normalize the data. In testing, the mean and std of the input data are calculated for the entire training set and used to normalize the data. This is why we need to call model.eval() before testing.
 Batch norm thus in a sense tries to decouple the input data to a layer from the layers before by simply applying the 'best possible' linear transformation to the input data. This is why batch norm is used in the middle of a network and not at the beginning or end.
+
+## Feature extraction
+1. Extract features from the encoder part of the autoencoder
+2. https://link.springer.com/chapter/10.1007/978-3-319-51281-5_40
