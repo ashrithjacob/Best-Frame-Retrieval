@@ -8,14 +8,15 @@ import pytorch_lightning as pl
 from processing import imshow, imexpl, grey_to_rgb
 
 class CustomDataModule(pl.LightningDataModule):
-    def __init__(self, data_dir="./video_frame", batch_size=32):
+    def __init__(self, data_dir='./videos/video_data/', batch_size=32, train_size = 0.8):
         super().__init__()
         self.data_dir = data_dir
         self.batch_size = batch_size
+        self.train_size = train_size
 
     def prepare_data(self):
         # download or prepare data if needed
-        # leave it blank if data is already prepared
+        # Add Extract frames call here
         pass
 
     def transform(self, stage=None):
@@ -29,18 +30,21 @@ class CustomDataModule(pl.LightningDataModule):
     )
         # define dataset
         self.dataset = ImageFolder(self.data_dir, transform=transform)
+        # split train and test dataset
+        random_seed = torch.Generator().manual_seed(42)
+        self.train, self.test = torch.utils.data.random_split(self.dataset, [self.train_size, 1.0 -self.train_size], generator=random_seed)
 
     def train_dataloader(self):
-        return DataLoader(self.dataset, batch_size=self.batch_size, shuffle=True)
+        return DataLoader(self.train, batch_size=self.batch_size, shuffle=True)
 
     def val_dataloader(self):
         return DataLoader(self.dataset, batch_size=self.batch_size)
 
     def test_dataloader(self):
-        return DataLoader(self.dataset, batch_size=self.batch_size)
+        return DataLoader(self.test, batch_size=self.batch_size)
 
 if __name__ == '__main__':
-    dm = CustomDataModule(data_dir='./videos/video_data/', batch_size=2)
+    dm = CustomDataModule(data_dir='./videos/video_data/', batch_size=2, train_size = 0.8)
     dm.transform()
     print(dm.dataset)
     print(len(dm.dataset))
