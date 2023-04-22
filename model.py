@@ -4,9 +4,9 @@ from torch import nn
 
 # Define the autoencoder architecture
 class Autoencoder(nn.Module):
-    def __init__(self):
+    def __init__(self, get_latent=False):
         super(Autoencoder, self).__init__()
-
+        self.get_latent = get_latent
         # Activation functions
         self.relu = nn.LeakyReLU(0.01)
         self.tanh = nn.Tanh()
@@ -86,5 +86,9 @@ class Autoencoder(nn.Module):
     def forward(self, x):
         # Encoder
         x = self.encoder(x)
+        latent = x
         x = self.decoder(x)
-        return x
+        if self.get_latent:
+            return latent
+        else:
+            return x
