@@ -1,3 +1,4 @@
 DATA/*
 __pycache__/*
-videos/*
+VIDEOS/*
+checkpoints/*
