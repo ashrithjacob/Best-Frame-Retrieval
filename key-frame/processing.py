@@ -54,4 +54,3 @@ def imexpl(img):
     print(f"image type: {img.dtype}")
     print(f"image min: {img.min()}")
     print(f"image max: {img.max()}")
-
