@@ -1,0 +1,9 @@
+matplotlib==3.6.2
+numpy==1.23.5
+opencv_python==4.7.0.68
+Pillow==9.5.0
+pytorch_lightning==2.0.1.post0
+pytorch_msssim==0.2.1
+setuptools==65.5.0
+torch==2.0.0
+torchvision==0.15.1
