@@ -13,7 +13,7 @@ from model import Autoencoder
 
 
 class Video:
-    def __init__(self, path, per_second_acquisition=5, threshold=70):
+    def __init__(self, path, per_second_acquisition=5, threshold=60):
         """
         class to extract frames from a video
 
@@ -29,6 +29,7 @@ class Video:
         self.path = path
         self.per_second_acquisition = per_second_acquisition
         self.threshold = threshold
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     def get_generators(self):
         """
@@ -144,8 +145,7 @@ class Video:
             print(f"Saved {i} number of key frames")
 
     def load_model(self):
-        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        model = Autoencoder().to(device)
+        model = Autoencoder().to(self.device)
         checkpoint_dir = "./checkpoints"
         loading_epoch = get_latest_epoch(checkpoint_dir)
         if loading_epoch != 0:
@@ -157,11 +157,10 @@ class Video:
         return model
 
     def transform(self, frame):
-        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         frame = self.bgr_to_rgb(frame)
         frame = ToTensor()(frame.copy())
         frame = torch.unsqueeze(frame, axis=0)
-        frame = frame.to(device)
+        frame = frame.to(self.device)
         return frame
 
     def display(self):
