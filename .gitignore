@@ -1,5 +1,9 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+# Data files
 DATA/*
-__pycache__/*
 VIDEOS/*
 checkpoints/*
 junk/*

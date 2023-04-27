@@ -8,10 +8,12 @@ import sys
 import time
 from torchvision.transforms import ToTensor
 from MS_SSIM_L1_loss import MS_SSIM_L1_LOSS
+from processing import resume, get_latest_epoch
+from model import Autoencoder
 
 
 class Video:
-    def __init__(self, path, per_second_acquisition=5, threshold=50):
+    def __init__(self, path, per_second_acquisition=5, threshold=70):
         """
         class to extract frames from a video
 
@@ -27,7 +29,6 @@ class Video:
         self.path = path
         self.per_second_acquisition = per_second_acquisition
         self.threshold = threshold
-        self.deblurred_frames_generator = None
 
     def get_generators(self):
         """
@@ -126,30 +127,47 @@ class Video:
                 cv2.imwrite(os.path.join(directory, f"s_{i}.png"), frame)
 
     def save_key_frames(self, directory):
+        model = self.load_model()
+        diff = MS_SSIM_L1_LOSS()
         i = 1
         try:
-            frame1 = self.transform(next(self.deblurred_frames_generator))
+            frame1 = next(self.deblurred_frames_generator)
             cv2.imwrite(os.path.join(directory, f"s_{i}.png"), frame1)
             i += 1
             while True:
-                frame2 = self.transform(next(self.deblurred_frames_generator))
-                if MS_SSIM_L1_LOSS(frame1, frame2) > self.threshold:
+                frame2 = next(self.deblurred_frames_generator)
+                if diff(model(self.transform(frame1)), model(self.transform(frame2))).item() > self.threshold:
                     cv2.imwrite(os.path.join(directory, f"s_{i}.png"), frame2)
                     i += 1
                 frame1 = frame2
         except StopIteration:
             print(f"Saved {i} number of key frames")
 
+    def load_model(self):
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        model = Autoencoder().to(device)
+        checkpoint_dir = "./checkpoints"
+        loading_epoch = get_latest_epoch(checkpoint_dir)
+        if loading_epoch != 0:
+            resume(model, f"{str(checkpoint_dir)}/MS_SSIM_L1-epoch-{str(loading_epoch)}.pth")
+            print(f"start inference from epoch {str(loading_epoch)}")
+        else:
+            raise Exception("No checkpoint found, please upload checkpoint for inference")
+        model.eval()
+        return model
+
     def transform(self, frame):
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         frame = self.bgr_to_rgb(frame)
-        frame = ToTensor()(frame)
+        frame = ToTensor()(frame.copy())
+        frame = torch.unsqueeze(frame, axis=0)
+        frame = frame.to(device)
         return frame
 
     def display(self):
         """
         Display the deblurred frames of the video
         """
-        self.get_generators()
         try:
             for frame in video.deblurred_frames:
                 plt.imshow(self.bgr_to_rgb(frame))
@@ -158,7 +176,6 @@ class Video:
             print("Exiting...")
             sys.exit()
         self.reset()
-
 
     def mkdir(self, directory):
         """
@@ -173,7 +190,6 @@ class Video:
         except OSError:
             print("Error: Creating directory for frame storage:", str(directory))
 
-
     def __len__(self):
         """
         return the number of deblurred frames of the video
@@ -184,7 +200,7 @@ class Video:
         return len
 
     def reset(self):
-        self.deblurred_frames_generator = None
+        self.get_generators()
 
 if __name__ == "__main__":
     start_time = time.time()
@@ -192,6 +208,10 @@ if __name__ == "__main__":
     video = Video(path="../VIDEOS/" + VID +".mp4", per_second_acquisition=5)
     print(f'number of deblurred frames: {len(video)}')
     video.save(directory="../VIDEOS/deblurred/" + VID + "/", type='blur')
+    for f in video.deblurred_frames_generator:
+        print(f.shape)
+        print(f)
+        print(np.array(f).dtype)
     del video
     print(f"--- {time.time() - start_time} seconds ---")
     # displaying the deblurred frames
