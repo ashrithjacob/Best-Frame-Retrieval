@@ -39,9 +39,10 @@ class Video:
         frames_generator (generator): A generator object that yields the frames of the video.
         """
         frames_generator = self.extract(cv2.VideoCapture(self.path))
-        self.deblurred_frames_generator = self.deblur(frames_generator)
-        print(f"Created generator objects")
+        deblurred_frames_generator = self.deblur(frames_generator)
+        key_frames_generator = self.key_filter()
         frames_generator = None
+        return deblurred_frames_generator, key_frames_generator
 
     def frame_rate(self, video):
         """
@@ -94,6 +95,15 @@ class Video:
         return image[..., ::-1]
 
     def deblur(self, frames_generator):
+        """
+        Generator that yields deblurred frames of a video.
+
+        Parameters:
+        frames_generator (generator): A generator object that yields the frames of the video.
+
+        Returns:
+        generator: A generator object that yields the deblurred frames of the video.
+        """
         max_laplacian_var = 0
         count = 0
         max_laplacian_var_frame = None
@@ -106,6 +116,27 @@ class Video:
                 yield max_laplacian_var_frame
                 max_laplacian_var = 0
                 count = 0
+        print("Deblurred frames generated")
+
+    def key_filter(self):
+        """
+        Generator that yields key frames of a video.
+
+        Returns:
+        generator: A generator object that yields the key frames of the video.
+        """
+        model = self.load_model()
+        diff = MS_SSIM_L1_LOSS()
+        try:
+            frame1 = next(self.deblurred_frames_generator)
+            yield frame1
+            while True:
+                frame2 = next(self.deblurred_frames_generator)
+                if diff(model(self.transform(frame1)), model(self.transform(frame2))).item() > self.threshold:
+                    yield frame2
+                frame1 = frame2
+        except StopIteration:
+            print(f"Key frames generated")
 
     def save(self,directory, type = 'blur'):
         """
@@ -113,38 +144,37 @@ class Video:
 
         Parameters:
         directory (str): The path to the directory where the frames are to be saved.
+        type (str): The type of frames to be saved. 'blur' for deblurred frames and 'key' for key frames.
+
+        Returns:
+        None
         """
         self.mkdir(directory)
-        if self.deblurred_frames_generator is None:
-            self.get_generators()
+        deblurred_frames_generator,key_frames_generator =self.get_generators()
         if type == 'blur':
-            self.save_deblurred(directory)
+            self.save_frames(directory, deblurred_frames_generator)
         elif type == 'key':
-            self.save_key_frames(directory)
-        self.reset()
+            self.save_frames(directory, key_frames_generator)
 
-    def save_deblurred(self, directory):
-        for i, frame in enumerate(self.deblurred_frames_generator):
-                cv2.imwrite(os.path.join(directory, f"s_{i}.png"), frame)
+    def save_frames(self, directory, frames_generator):
+        """
+        Save the frames of the video in a directory.
 
-    def save_key_frames(self, directory):
-        model = self.load_model()
-        diff = MS_SSIM_L1_LOSS()
-        i = 1
-        try:
-            frame1 = next(self.deblurred_frames_generator)
-            cv2.imwrite(os.path.join(directory, f"s_{i}.png"), frame1)
-            i += 1
-            while True:
-                frame2 = next(self.deblurred_frames_generator)
-                if diff(model(self.transform(frame1)), model(self.transform(frame2))).item() > self.threshold:
-                    cv2.imwrite(os.path.join(directory, f"s_{i}.png"), frame2)
-                    i += 1
-                frame1 = frame2
-        except StopIteration:
-            print(f"Saved {i} number of key frames")
+        Parameters:
+        directory (str): The path to the directory where the frames are to be saved.
+        frames_generator (generator): A generator object that yields the frames of the video.
+
+        Returns:
+        None
+        """
+        for i, frame in enumerate(frames_generator):
+            cv2.imwrite(os.path.join(directory, f"s_{i}.png"), frame)
+        print(f"Saved {i} number of frames")
 
     def load_model(self):
+        """
+        Load the model for inference.
+        """
         model = Autoencoder().to(self.device)
         checkpoint_dir = "./checkpoints"
         loading_epoch = get_latest_epoch(checkpoint_dir)
@@ -163,18 +193,22 @@ class Video:
         frame = frame.to(self.device)
         return frame
 
-    def display(self):
+    def display(self, type = 'blur'):
         """
         Display the deblurred frames of the video
         """
+        deblurred_frames_generator,key_frames_generator =self.get_generators()
+        if type == 'blur':
+            frames_generator = deblurred_frames_generator
+        elif type == 'key':
+            frames_generator = key_frames_generator
         try:
-            for frame in video.deblurred_frames:
+            for frame in frames_generator:
                 plt.imshow(self.bgr_to_rgb(frame))
                 plt.show()
         except KeyboardInterrupt:
             print("Exiting...")
             sys.exit()
-        self.reset()
 
     def mkdir(self, directory):
         """
@@ -189,28 +223,25 @@ class Video:
         except OSError:
             print("Error: Creating directory for frame storage:", str(directory))
 
-    def __len__(self):
+    def __len__(self, type = 'blur'):
         """
         return the number of deblurred frames of the video
         """
-        self.get_generators()
-        len = sum(1 for _ in self.deblurred_frames_generator)
-        self.reset()
+        deblurred_frames_generator, key_frames_generator =self.get_generators()
+        if type == 'blur':
+            frames_generator = deblurred_frames_generator
+        elif type == 'key':
+            frames_generator = key_frames_generator
+        len = sum(1 for _ in frames_generator)
         return len
 
-    def reset(self):
-        self.get_generators()
 
 if __name__ == "__main__":
     start_time = time.time()
-    VID = 'V1'
+    VID = 'V0'
     video = Video(path="../VIDEOS/" + VID +".mp4", per_second_acquisition=5)
     print(f'number of deblurred frames: {len(video)}')
     video.save(directory="../VIDEOS/deblurred/" + VID + "/", type='blur')
-    for f in video.deblurred_frames_generator:
-        print(f.shape)
-        print(f)
-        print(np.array(f).dtype)
     del video
     print(f"--- {time.time() - start_time} seconds ---")
     # displaying the deblurred frames
