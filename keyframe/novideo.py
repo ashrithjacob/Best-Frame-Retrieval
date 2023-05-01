@@ -12,7 +12,7 @@ from processing import resume, get_latest_epoch
 from model import Autoencoder
 
 
-class Video:
+class NoVideo:
     def __init__(self, path, per_second_acquisition=5, threshold=60):
         """
         class to extract frames from a video
@@ -132,7 +132,7 @@ class Video:
             yield frame1
             while True:
                 frame2 = next(deblurred_frames_generator)
-                if diff(model(self.transform(frame1)), model(self.transform(frame2))).item() > self.threshold:
+                if diff(self.transform(frame1), self.transform(frame2)).item() > self.threshold:
                     yield frame2
                 frame1 = frame2
         except StopIteration:
@@ -169,7 +169,7 @@ class Video:
         """
         for i, frame in enumerate(frames_generator):
             cv2.imwrite(os.path.join(directory, f"s_{i}.png"), frame)
-        print(f"Saved {i+1} number of frames")
+        print(f"Saved {i} number of frames")
 
     def load_model(self):
         """
