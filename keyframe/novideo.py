@@ -8,7 +8,7 @@ from MS_SSIM_L1_loss import MS_SSIM_L1_LOSS
 from processing import Helper
 
 
-class Video:
+class NoVideo:
     def __init__(self, path, per_second_acquisition=5, threshold=60):
         """
         class to extract frames from a video
