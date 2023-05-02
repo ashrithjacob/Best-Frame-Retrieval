@@ -4,7 +4,6 @@ import os
 import matplotlib.pyplot as plt
 import torchvision
 from torch import nn
-from processing import checkpoint, imshow, resume, get_epoch
 
 
 # Define the autoencoder architecture
@@ -98,7 +97,7 @@ class Autoencoder(nn.Module):
         else:
             return x
 
-
+"""
 # Define the training function
 def train(model, device, train_loader, optimizer, criterion, start_epoch, end_epoch, checkpoint_dir):
     model.train()
@@ -160,3 +159,4 @@ def disp_test_loss(model, device, test_loader, criterion, checkpoint_dir):
     plt.xlabel("epoch number")
     plt.ylabel("Average test loss")
     plt.show()
+"""
