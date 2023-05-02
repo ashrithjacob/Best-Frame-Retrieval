@@ -9,7 +9,7 @@ from processing import Helper
 
 
 class Video:
-    def __init__(self, path, per_second_acquisition=5, threshold=60):
+    def __init__(self, path, per_second_acquisition=5, threshold=60, use_model=True):
         """
         class to extract frames from a video
 
@@ -25,6 +25,7 @@ class Video:
         self.path = path
         self.per_second_acquisition = per_second_acquisition
         self.threshold = threshold
+        self.use_model = use_model
 
     def get_generators(self):
         """
@@ -129,7 +130,7 @@ class Video:
         Returns:
         generator: A generator object that yields the key frames of the video.
         """
-        model = Helper.load_model()
+        model = Helper.load_model(self.use_model)
         diff = MS_SSIM_L1_LOSS()
         try:
             frame1 = next(deblurred_frames_generator)
@@ -177,6 +178,7 @@ if __name__ == "__main__":
     VID = 'V1'
     video = Video(path="../VIDEOS/" + VID +".mp4", per_second_acquisition=5)
     print(f'number of deblurred frames: {len(video)}')
+    print(f"--- {time.time() - start_time} seconds ---")
     video.save(directory="../VIDEOS/deblurred/" + VID + "/", type='blur')
     del video
     print(f"--- {time.time() - start_time} seconds ---")

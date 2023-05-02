@@ -1,87 +1,14 @@
 import torch
 import torchvision
+import matplotlib.pyplot as plt
+import numpy as np
+import time
 from torch import nn, optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 from processing import grey_to_rgb
-import matplotlib.pyplot as plt
-import numpy as np
-import time
 from MS_SSIM_L1_loss import MS_SSIM_L1_LOSS
-
-# Define the autoencoder architecture
-class Autoencoder(nn.Module):
-    def __init__(self):
-        super(Autoencoder, self).__init__()
-
-        # Activation functions
-        self.relu = nn.ReLU()
-        self.tanh = nn.Tanh()
-
-        # Encoder
-        self.conv1 = nn.Conv2d(
-            3, 32, kernel_size=3, stride=1, padding=1
-        )  # 96*192 -> 96*192
-        self.conv2 = nn.Conv2d(
-            32, 64, kernel_size=3, stride=1, padding=1
-        )  # 96*192 -> 96*192
-        self.conv3 = nn.Conv2d(
-            64, 128, kernel_size=4, stride=2, padding=1
-        )  # 96*192 -> 48*96
-        self.conv4 = nn.Conv2d(
-            128, 64, kernel_size=4, stride=2, padding=1
-        )  # 48*96 -> 24*48
-        self.conv5 = nn.Conv2d(
-            64, 8, kernel_size=4, stride=2, padding=1
-        )  # 24*48 -> 12*24
-        self.encoder = nn.Sequential(
-            self.conv1,
-            self.relu,
-            self.conv2,
-            self.relu,
-            self.conv3,
-            self.relu,
-            self.conv4,
-            self.relu,
-            self.conv5,
-            self.relu,
-        )
-
-        # Decoder
-        self.t_conv1 = nn.ConvTranspose2d(
-            8, 64, kernel_size=4, stride=2, padding=1
-        )  # 12*24 -> 24*48
-        self.t_conv2 = nn.ConvTranspose2d(
-            64, 128, kernel_size=4, stride=2, padding=1
-        )  # 24*48 -> 48*96
-        self.t_conv3 = nn.ConvTranspose2d(
-            128, 64, kernel_size=4, stride=2, padding=1
-        )  # 48*96 -> 96*192
-        self.t_conv4 = nn.ConvTranspose2d(
-            64, 32, kernel_size=3, stride=1, padding=1
-        )  # 96*192 -> 96*192
-        self.t_conv5 = nn.ConvTranspose2d(
-            32, 3, kernel_size=3, stride=1, padding=1
-        )  # 96*192 -> 96*192
-        self.decoder = nn.Sequential(
-            self.t_conv1,
-            self.relu,
-            self.t_conv2,
-            self.relu,
-            self.t_conv3,
-            self.relu,
-            self.t_conv4,
-            self.relu,
-            self.t_conv5,
-            self.tanh,
-        )
-
-    def forward(self, x):
-        # Encoder
-        x = self.encoder(x)
-        x = self.decoder(x)
-        return x
-
+from model import Autoencoder
 
 if __name__ == "__main__":
     # Device configuration
