@@ -21,3 +21,5 @@ In order to extract the key frames, conseccutive similar frames are to be identi
 Two consective frames are considered similar if the loss between them is less than a threshold value. This value can be set by the user and will determine the number of frames generated to represent the video (higher the threshold, fewer the number of frames).\
 One can see the difference in the loss between consecutive frames with and without the autoencoder below:
 ![Loss-Comparison](https://github.com/ashrithjacob/Best-Frame-Retrieval/blob/main/docs/images/consecutive_frames.png?raw=true)
+
+From this, we can see that the loss between consecutive frames has a higher variance when the autoecoder is used. This is because the autoencoder is trained to extract the most important features from the image. Thus, similat frames will be more similar and dissimilar frames will be more dissimilar.
