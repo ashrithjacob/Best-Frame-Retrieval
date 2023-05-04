@@ -4,7 +4,7 @@ Junyu Chen et al 2021 J. Phys.: Conf. Ser. 2025 012018
 
 ## Architecture
 The architecture is as follows:
-![Architecture](https://github.com/ashrithjacob/Best-Frame-Retrieval/blob/main/images/architecture.png?raw=true)
+![Architecture](https://github.com/ashrithjacob/Best-Frame-Retrieval/blob/main/docs/images/architecture.png?raw=true)
 
 ## Dataset
 The dataset used is Caltech-256. It can be downloaded from [here](http://www.vision.caltech.edu/Image_Datasets/Caltech256/).\
