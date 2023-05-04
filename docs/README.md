@@ -22,4 +22,4 @@ Two consective frames are considered similar if the loss between them is less th
 One can see the difference in the loss between consecutive frames with and without the autoencoder below:
 ![Loss-Comparison](https://github.com/ashrithjacob/Best-Frame-Retrieval/blob/main/docs/images/consecutive_frames.png?raw=true)
 
-From this, we can see that the loss between consecutive frames has a higher variance when the autoecoder is used. This is because the autoencoder is trained to extract the most important features from the image. Thus, similat frames will be more similar and dissimilar frames will be more dissimilar.
+From this, we can see that the loss between consecutive frames has a higher variance when the autoecoder is used. This is because the autoencoder is trained to extract the most important features from the image. Thus, similat frames will be more similar and dissimilar frames will be more dissimilar. Thus allowing for smarter frame extraction.
