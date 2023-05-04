@@ -9,29 +9,33 @@ from processing import Helper
 
 
 class Video:
-    def __init__(self, path, per_second_acquisition=5, threshold=60):
+    def __init__(self, path, per_second_acquisition=5, threshold=60, use_model=True):
         """
         class to extract frames from a video
 
         Parameters:
         path (str): The path to the video.
         per_second_acquisition (int): The number of frames to be extracted per second.
-
-        Attributes:
-        path (str): The path to the video.
-        per_second_acquisition (int): The number of frames to be extracted per second.
-        deblurred_frames_generator (generator): A generator object that yields the deblurred frames of the video.
+        threshold (float): The threshold for the difference between two frames to be considered as key frames.
+        use_model (bool): Whether to use a pretrained model or not.
         """
         self.path = path
         self.per_second_acquisition = per_second_acquisition
         self.threshold = threshold
+        self.use_model = use_model
+        print(f'frames per second of video: {Helper.frame_rate(cv2.VideoCapture(self.path))}')
+        print(f"number of key frames to be generated per second: {self.__len__(type='key')}")
 
     def get_generators(self):
         """
         Create object generators from the video.
 
-        Attributes:
-        frames_generator (generator): A generator object that yields the frames of the video.
+        Parameters:
+        None
+
+        Returns:
+        deblurred_frames_generator: A generator object that yields the frames of the video.
+        key_frames_generator: A generator object that yields the key frames of the video.
         """
         frames_generator = self.extract(cv2.VideoCapture(self.path))
         deblurred_frames_generator = self.deblur(frames_generator)
@@ -68,9 +72,11 @@ class Video:
         Returns:
         None
         """
+        num = 0
         for i, frame in enumerate(frames_generator):
             cv2.imwrite(os.path.join(directory, f"s_{i}.png"), frame)
-        print(f"Saved {i+1} number of frames")
+            num += 1
+        print(f"Saved {num} number of frames in {directory}")
 
     def extract(self, video):
         """"
@@ -85,8 +91,8 @@ class Video:
         """
         current_frame = 0
         fps = Helper.frame_rate(video)
-        print(f"FPS: {fps}")
-        collect_every = fps // self.per_second_acquisition #Raiseerror if fps < per_second_acquisition
+        collect_every = fps // self.per_second_acquisition 
+        #TODO:Raiseerror if fps < per_second_acquisition
         while True:
             success, frame = video.read()
             if success:
@@ -129,14 +135,14 @@ class Video:
         Returns:
         generator: A generator object that yields the key frames of the video.
         """
-        model = Helper.load_model()
-        diff = MS_SSIM_L1_LOSS()
+        model = Helper.load_model(self.use_model)
+        function = MS_SSIM_L1_LOSS()
         try:
             frame1 = next(deblurred_frames_generator)
             yield frame1
             while True:
                 frame2 = next(deblurred_frames_generator)
-                if diff(model(Helper.transform(frame1)), model(Helper.transform(frame2))).item() > self.threshold:
+                if function(model(Helper.transform(frame1)), model(Helper.transform(frame2))).item() > self.threshold:
                     yield frame2
                 frame1 = frame2
         except StopIteration:
@@ -156,7 +162,7 @@ class Video:
                 plt.imshow(Helper.bgr_to_rgb(frame))
                 plt.show()
         except KeyboardInterrupt:
-            print("Exiting...")
+            print("\nExiting...")
             sys.exit()
 
     def __len__(self, type = 'blur'):
@@ -174,11 +180,12 @@ class Video:
 
 if __name__ == "__main__":
     start_time = time.time()
-    VID = 'V1'
+    VID = 'V2'
     video = Video(path="../VIDEOS/" + VID +".mp4", per_second_acquisition=5)
     print(f'number of deblurred frames: {len(video)}')
-    video.save(directory="../VIDEOS/deblurred/" + VID + "/", type='blur')
-    del video
     print(f"--- {time.time() - start_time} seconds ---")
+    #video.save(directory="../VIDEOS/deblurred/" + VID + "/", type='blur')
+    video.display(type='blur')
+    #print(f"--- {time.time() - start_time} seconds ---")
     # displaying the deblurred frames
     # video.display()

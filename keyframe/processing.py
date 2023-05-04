@@ -3,13 +3,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 import cv2
+import re
+from torch import nn
 from model import Autoencoder
+from PIL import Image, ImageFilter
 from torchvision.transforms import ToTensor
 
 
 class Helper:
     get_epoch = lambda x: int(x.split("-")[2].split(".")[0][0:])
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    pat=re.compile("(\d+)\D*$")
 
     @staticmethod
     def get_latest_epoch(path):
@@ -55,6 +59,25 @@ class Helper:
         plt.show()
 
     @staticmethod
+    def display_pairs(img1, img2, title_1, title_2):
+        """
+        Takes two PIL images and displays them side by side.
+
+        Parameters:
+        img1 (PIL.Image): The first image.
+        img2 (PIL.Image): The second image.
+        """
+        # Display ground truth image and blurred image side by side
+        fig, ax = plt.subplots(1, 2, figsize=(8, 4))
+        # Display ground truth image
+        ax[0].imshow(img1)
+        ax[0].set_title(str(title_1))
+        # Display blurred image
+        ax[1].imshow(img2)
+        ax[1].set_title(str(title_2))
+        plt.show()
+
+    @staticmethod
     def imexpl(img):
         print(f"image shape: {img.shape}")
         print(f"image type: {img.dtype}")
@@ -88,18 +111,21 @@ class Helper:
         return image[..., ::-1]
 
     @staticmethod
-    def load_model():
+    def load_model(use_model=True):
         """
         Load the model for inference.
         """
-        model = Autoencoder().to(Helper.device)
-        checkpoint_dir = "./checkpoints"
-        loading_epoch = Helper.get_latest_epoch(checkpoint_dir)
-        if loading_epoch != 0:
-            Helper.resume(model, f"{str(checkpoint_dir)}/MS_SSIM_L1-epoch-{str(loading_epoch)}.pth")
-            print(f"start inference from epoch {str(loading_epoch)}")
+        if use_model:
+            model = Autoencoder().to(Helper.device)
+            checkpoint_dir = "./checkpoints"
+            loading_epoch = Helper.get_latest_epoch(checkpoint_dir)
+            if loading_epoch != 0:
+                Helper.resume(model, f"{str(checkpoint_dir)}/MS_SSIM_L1-epoch-{str(loading_epoch)}.pth")
+                print(f"start inference from epoch {str(loading_epoch)}")
+            else:
+                raise Exception("No checkpoint found, please upload checkpoint for inference")
         else:
-            raise Exception("No checkpoint found, please upload checkpoint for inference")
+            model = nn.Identity().to(Helper.device)
         model.eval()
         return model
 
@@ -124,3 +150,31 @@ class Helper:
                 os.makedirs(directory)
         except OSError:
             print("Error: Creating directory for frame storage:", str(directory))
+
+    @staticmethod
+    def key_func(x):
+            mat=Helper.pat.search(os.path.split(x)[-1]) # match last group of digits
+            if mat is None:
+                return x
+            return "{:>10}".format(mat.group(1)) # right align to 10 digits.
+
+    @staticmethod
+    def MS_SSIM_L1_diff(generator, function, model):
+        diff = []
+        diff.append(0)
+        counter = 1
+        try:
+            frame1 = next(generator)
+            while True:
+                frame2 = next(generator)
+                diff.append(function(model(Helper.transform(frame1)), model(Helper.transform(frame2))).item())
+                counter += 1
+                frame1 = frame2
+        except StopIteration:
+            print(f"loaded diffs: DONE")
+        return diff, counter
+
+    @staticmethod
+    def max_diff(generator, function, model):
+        diff, _ = Helper.MS_SSIM_L1_diff(generator, function, model)
+        return max(diff)
