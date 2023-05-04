@@ -161,14 +161,20 @@ class Helper:
     @staticmethod
     def MS_SSIM_L1_diff(generator, function, model):
         diff = []
-        counter = 0
+        diff.append(0)
+        counter = 1
         try:
             frame1 = next(generator)
             while True:
                 frame2 = next(generator)
                 diff.append(function(model(Helper.transform(frame1)), model(Helper.transform(frame2))).item())
-                count += 1
+                counter += 1
                 frame1 = frame2
         except StopIteration:
             print(f"loaded diffs: DONE")
-        return diff, count
+        return diff, counter
+
+    @staticmethod
+    def max_diff(generator, function, model):
+        diff, _ = Helper.MS_SSIM_L1_diff(generator, function, model)
+        return max(diff)
