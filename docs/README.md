@@ -8,7 +8,7 @@ The architecture is as follows:
 
 ## Dataset
 The dataset used is Caltech-256. It can be downloaded from [here](http://www.vision.caltech.edu/Image_Datasets/Caltech256/).\
-Having trained the autoencoder on the above dataset, we get the lwest training loss at epoch 50. The loss is as follows:
+Having trained the autoencoder on the above dataset, we get the lwest training loss at epoch 50. The loss is as follows:\
 ![Test-Loss-Cal256](https://github.com/ashrithjacob/Best-Frame-Retrieval/blob/main/docs/images/test_loss_cal256.png?raw=true)
 
 On further fine-tuning the model on the frames extracted from the videos, we get the following loss:
